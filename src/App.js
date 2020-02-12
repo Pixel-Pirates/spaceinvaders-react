@@ -6,7 +6,7 @@ import Invader from './Components/Invader';
 import Bullet from './Components/Bullet';
 
 
-const FIGHTER_SPEED = 2
+const FIGHTER_SPEED = 0.5
 
 function fighterCollided(fighter, bullet)
 {
@@ -60,6 +60,10 @@ function invaderCollided(invader, bullet)
 class App extends React.Component
 {
   state = {
+    fighter : {
+      movingLeft : false,
+      movingRight : false
+    },
     fighterX: 50,
     bullet: {
       active: false,
@@ -88,23 +92,25 @@ class App extends React.Component
     window.onkeypress = (event) =>
     {
       //handle keypress
-      var newFighterX = app.state.fighterX
       if (event.code == "KeyA")
-        newFighterX -= FIGHTER_SPEED
+        this.setState({fighter: {movingLeft: true}})
+        //newFighterX -= FIGHTER_SPEED
       else if (event.code == "KeyD")
-        newFighterX += FIGHTER_SPEED
+        //newFighterX += FIGHTER_SPEED
+        this.setState({fighter: {movingRight: true}})
       else if (event.code == "Space" && !app.state.bullet.active)
           app.setState({bullet : {active: true, x : app.state.fighterX, y : 10}})
-      
-      //correct x value if it's over
-      if (newFighterX < 0)
-        newFighterX = 0
-      else if (newFighterX > 100)
-        newFighterX = 100
-      
-      //set fighterx value if it's changed
-      if (this.state.fighterX != newFighterX)
-        app.setState({fighterX: newFighterX})
+    }
+
+    window.onkeyup = (event) =>
+    {
+      //handle keypress
+      if (event.code == "KeyA")
+        this.setState({fighter: {movingLeft: false}})
+        //newFighterX -= FIGHTER_SPEED
+      else if (event.code == "KeyD")
+        //newFighterX += FIGHTER_SPEED
+        this.setState({fighter: {movingRight: false}})
     }
 
     this.spawnEntities()
@@ -235,6 +241,29 @@ class App extends React.Component
         y : randomInvader.y
       }})
     }
+
+
+    var newFighterX = this.state.fighterX
+    
+    if (this.state.fighter.movingLeft)
+    {
+      newFighterX -= FIGHTER_SPEED
+    }
+
+    else if (this.state.fighter.movingRight)
+    {
+      newFighterX += FIGHTER_SPEED
+    }
+
+    //correct x value if it's over
+    if (newFighterX < 0)
+    newFighterX = 0
+  else if (newFighterX > 100)
+    newFighterX = 100
+  
+  //set fighterx value if it's changed
+  if (this.state.fighterX != newFighterX)
+    this.setState({fighterX: newFighterX})
   }
 
   reset = () =>
