@@ -1,5 +1,6 @@
 {
-  "name": "react-app",
+  "name": "spaceinvaders-react",
+  "homepage": "https://pixel-pirates.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
