@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d4f4e2dce8d6cae06bda29dd53c563e9",
+    "revision": "cdf55996e56e618916c977cf209f7240",
     "url": "/spaceinvaders-react/index.html"
   },
   {
