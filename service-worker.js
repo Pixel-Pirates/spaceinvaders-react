@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/spaceinvaders-react/precache-manifest.c29b74edd63b562da023768caa681366.js"
+  "/spaceinvaders-react/precache-manifest.51ef5f9a27ebe6404c8a8a0fc21bf1af.js"
 );
 
 self.addEventListener('message', (event) => {
