@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.d1b05096.chunk.css",
-    "main.js": "/static/js/main.56d138c7.chunk.js",
-    "main.js.map": "/static/js/main.56d138c7.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.612b31fa.js",
-    "runtime-main.js.map": "/static/js/runtime-main.612b31fa.js.map",
-    "static/js/2.3616d2ef.chunk.js": "/static/js/2.3616d2ef.chunk.js",
-    "static/js/2.3616d2ef.chunk.js.map": "/static/js/2.3616d2ef.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.0a1de387b739b3b226933c31d8df79f8.js": "/precache-manifest.0a1de387b739b3b226933c31d8df79f8.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.3616d2ef.chunk.js.LICENSE": "/static/js/2.3616d2ef.chunk.js.LICENSE"
+    "main.css": "/spaceinvaders-react/static/css/main.d1b05096.chunk.css",
+    "main.js": "/spaceinvaders-react/static/js/main.a9ab74b0.chunk.js",
+    "main.js.map": "/spaceinvaders-react/static/js/main.a9ab74b0.chunk.js.map",
+    "runtime-main.js": "/spaceinvaders-react/static/js/runtime-main.05c4a313.js",
+    "runtime-main.js.map": "/spaceinvaders-react/static/js/runtime-main.05c4a313.js.map",
+    "static/js/2.3616d2ef.chunk.js": "/spaceinvaders-react/static/js/2.3616d2ef.chunk.js",
+    "static/js/2.3616d2ef.chunk.js.map": "/spaceinvaders-react/static/js/2.3616d2ef.chunk.js.map",
+    "index.html": "/spaceinvaders-react/index.html",
+    "precache-manifest.c29b74edd63b562da023768caa681366.js": "/spaceinvaders-react/precache-manifest.c29b74edd63b562da023768caa681366.js",
+    "service-worker.js": "/spaceinvaders-react/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/spaceinvaders-react/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.3616d2ef.chunk.js.LICENSE": "/spaceinvaders-react/static/js/2.3616d2ef.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.612b31fa.js",
+    "static/js/runtime-main.05c4a313.js",
     "static/js/2.3616d2ef.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.56d138c7.chunk.js"
+    "static/js/main.a9ab74b0.chunk.js"
   ]
 }
